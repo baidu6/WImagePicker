@@ -11,6 +11,7 @@ import Photos
 
 typealias OnCommpletedHandler = ([UIImage]?) -> Void
 
+let bgColor = UIColor.black.withAlphaComponent(0.7)
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height
 let IPhoneX = UIScreen.main.bounds.size == CGSize(width: 375, height: 812)
@@ -149,6 +150,18 @@ extension ImagePickerViewController: UICollectionViewDelegate, UICollectionViewD
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let asset = self.albumItem.fetchResult[indexPath.row]
+        let browseVC = DetailBrowseViewController()
+        //获取原图
+        PHImageManager.default().requestImage(for: asset, targetSize: PHImageManagerMaximumSize, contentMode: PHImageContentMode.aspectFill, options: nil) { (image, _) in
+            if let image = image {
+                browseVC.image = image
+                self.navigationController?.pushViewController(browseVC, animated: true)
+            }
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return margin
     }
@@ -223,7 +236,7 @@ class AlbumBottomView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.black.withAlphaComponent(0.7)
+        backgroundColor = bgColor
         setupUI()
     }
     

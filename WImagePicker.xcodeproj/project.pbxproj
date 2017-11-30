@@ -19,6 +19,7 @@
 		CB67FB821FBAEC5300B5DD0A /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB811FBAEC5300B5DD0A /* AlbumListViewController.swift */; };
 		CB67FB841FBAEC9B00B5DD0A /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB831FBAEC9B00B5DD0A /* AlbumListCell.swift */; };
 		CB67FB861FBAF35100B5DD0A /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB851FBAF35100B5DD0A /* ImagePickerManager.swift */; };
+		CBE64A091FCFFA8C00986421 /* DetailBrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A081FCFFA8C00986421 /* DetailBrowseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CB67FB811FBAEC5300B5DD0A /* AlbumListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
 		CB67FB831FBAEC9B00B5DD0A /* AlbumListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListCell.swift; sourceTree = "<group>"; };
 		CB67FB851FBAF35100B5DD0A /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		CBE64A081FCFFA8C00986421 /* DetailBrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBrowseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				CB67FB7D1FBAEC1800B5DD0A /* ImagePickerViewController.swift */,
 				CB67FB811FBAEC5300B5DD0A /* AlbumListViewController.swift */,
+				CBE64A081FCFFA8C00986421 /* DetailBrowseViewController.swift */,
 				CB67FB831FBAEC9B00B5DD0A /* AlbumListCell.swift */,
 				CB67FB851FBAF35100B5DD0A /* ImagePickerManager.swift */,
 			);
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB67FB821FBAEC5300B5DD0A /* AlbumListViewController.swift in Sources */,
+				CBE64A091FCFFA8C00986421 /* DetailBrowseViewController.swift in Sources */,
 				CB67FB7E1FBAEC1800B5DD0A /* ImagePickerViewController.swift in Sources */,
 				CB67FB841FBAEC9B00B5DD0A /* AlbumListCell.swift in Sources */,
 				CB67FB511FBAE27600B5DD0A /* ViewController.swift in Sources */,

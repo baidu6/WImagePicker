@@ -35,9 +35,9 @@ class ImagePickerManager: NSObject {
         }
     }
     
-    static func getImageFromAsset(asset: PHAsset, finished: @escaping (UIImage?) -> Void) {
+    static func getImageFromAsset(size: CGSize = CGSize(width: iconWidth, height: iconWidth), asset: PHAsset, finished: @escaping (UIImage?) -> Void) {
         
-        imageManager.requestImage(for: asset, targetSize: CGSize(width: iconWidth, height: iconWidth), contentMode: PHImageContentMode.aspectFill, options: nil) { (image, info) in
+        imageManager.requestImage(for: asset, targetSize: size, contentMode: PHImageContentMode.aspectFill, options: nil) { (image, info) in
             finished(image)
         }
         finished(nil)
